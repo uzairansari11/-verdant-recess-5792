@@ -1,0 +1,343 @@
+body {
+  font-family: BrandonTextWeb-Regular;
+
+  background-image: linear-gradient(to right, rgb(25, 28, 40), rgb(59, 27, 42));
+
+  color: white;
+}
+
+#container {
+  width: 100%;
+}
+
+#banner > {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#banner > video {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+nav {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 98%;
+  margin: auto;
+  font-weight: bolder;
+  position: fixed;
+  justify-content: space-around;
+}
+nav > div {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+}
+#mid {
+  justify-content: space-around;
+  display: flex;
+  width: 30%;
+}
+#last {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+#logo {
+  width: 20%;
+}
+#logo > img {
+  width: 20%;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+a {
+  color: #b6b7b9;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+a:hover{
+  color: white;
+}
+
+#content {
+  /* border: 5px solid blue; */
+
+  width: 100%;
+  text-align: center;
+
+  z-index: 1;
+  margin-top: -700px;
+}
+
+#content > img {
+  width: 35%;
+}
+#content > h2 {
+  color: #ffffff;
+  /* border: 2px solid blue; */
+  width: 35%;
+  margin: auto;
+  margin-top: 50px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+.pass {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 45vh;
+}
+.pass > div {
+  border: 2px solid #c9c9ce;
+  text-align: center;
+  color: #adaeb2;
+  border-radius: 20px;
+}
+.pass > div:hover {
+  background-color: #232631;
+}
+.pass > div > p {
+  width: 66%;
+  word-spacing: 0px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.pass > div:nth-child(1) > h1 {
+  color: #eec879;
+}
+.pass > div:nth-child(2) > h1 {
+  color: #c9c9ce;
+}
+
+.pass > div:nth-child(3) > h1 {
+  color: #724362;
+}
+
+#ExploreBtn {
+  background: #ffffff;
+border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ff4742;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+#ExploreBtn:hover,
+#ExploreBtn:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #000000;
+}
+
+#ExploreBtn:active {
+  opacity: 0.5;
+}
+
+#fitness-member > p {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+#top-fitness-member {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  justify-content: space-around;
+  gap: 10%;
+  width: 80%;
+  margin: auto;
+}
+#top-fitness-member > div > img {
+  width: 100%;
+}
+
+#top-fitness-member > div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+#top-fitness-member > div:nth-child(2) {
+  margin-top: 50px;
+}
+
+#bottom-fitness-member {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+  padding: 20px;
+  margin-top: 50px;
+}
+#bottom-fitness-member > div > img {
+  width: 100%;
+}
+#bottom-fitness-member > div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+#groupclass {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2%;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+#groupclass > div > img {
+  width: 100%;
+  padding: 3px;
+  border-radius: 15px;
+}
+
+#fun {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#cult-pass {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
+  margin: auto;
+  gap: 5%;
+}
+
+#cult-pass > div > img {
+  width: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+#culttop > p {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  letter-spacing: 2px;
+}
+#culttop > a {
+  margin: auto;
+  display: block;
+  width: 10%;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #3887fd;
+}
+#cult-pass > div > h2 {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+ margin: -120px;
+  margin-left: 30px;
+  margin-bottom: -30px;
+  z-index: 1;
+}
+#cult-pass > div > h1 {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  z-index: 1;
+  margin-left: 30px;
+  margin-top: 40px;
+  font-size: 60px;
+}
+#cult-pass > div:nth-child(1) > h1 {
+  color: #ffcf61;
+}
+#cult-pass > div:nth-child(2) > h1 {
+  color: #c9c9ce;
+}
+
+#cult-pass > div:nth-child(3) > h1 {
+  color: #e16b9f;
+}
+#cult-pass > div > h3 {
+  font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  margin-bottom: 0px;
+}
+
+#cult-pass > div > ul {
+  font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  padding: 4%;
+  margin-bottom: 0px;
+}
+#cult-pass > div > ul > li {
+  font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#cult-pass > div > button {
+  background: #ffffff;
+  font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ff4742;
+  cursor: pointer;
+  padding: 12px 14px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+#cult-pass > div > button:hover,
+#cult-pass > div > button:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #000000;
+}
+
+#cult-pass > div > button:active {
+  opacity: 0.5;
+}
+.try{
+background-color:#2f313c;
+
+}
