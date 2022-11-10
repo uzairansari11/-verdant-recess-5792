@@ -1,7 +1,7 @@
 body {
   font-family: BrandonTextWeb-Regular;
 
-  background-image: linear-gradient(to right, rgb(25, 28, 40), rgb(59, 27, 42));
+  background-image: linear-gradient(to right, rgb(25, 28, 40), rgb(19, 12, 15));
 
   color: white;
 }
@@ -23,9 +23,9 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
-  height: 100%;
+
   z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
@@ -62,14 +62,14 @@ nav > div {
   margin-left: 10px;
 }
 
-a {
+nav > div > a {
   color: #b6b7b9;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
 
-a:hover{
+a:hover {
   color: white;
 }
 
@@ -133,7 +133,7 @@ a:hover{
 
 #ExploreBtn {
   background: #ffffff;
-border: none;
+  border: none;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -190,7 +190,7 @@ border: none;
 #bottom-fitness-member {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10%;
+  gap: 30px;
   padding: 20px;
   margin-top: 50px;
 }
@@ -234,7 +234,7 @@ border: none;
   grid-template-columns: repeat(3, 1fr);
   width: 85%;
   margin: auto;
-  gap: 5%;
+  gap: 50px;
 }
 
 #cult-pass > div > img {
@@ -268,10 +268,11 @@ border: none;
 #cult-pass > div > h2 {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
- margin: -120px;
+  margin: -120px;
   margin-left: 30px;
   margin-bottom: -30px;
   z-index: 1;
+  width: 50%;
 }
 #cult-pass > div > h1 {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
@@ -325,6 +326,7 @@ border: none;
   margin-top: 30px;
   font-weight: 900;
   margin-right: 10px;
+  margin-bottom: 150px;
 }
 
 #cult-pass > div > button:hover,
@@ -337,7 +339,316 @@ border: none;
 #cult-pass > div > button:active {
   opacity: 0.5;
 }
-.try{
-background-color:#2f313c;
+.try {
+  background-color: #2f313c;
+}
 
+#support {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+
+#support > div {
+  position: relative;
+  transition: all 0.3s;
+}
+
+#support > div:hover {
+  transform: scale(1.01);
+}
+
+#support > div > img {
+  width: 100%;
+  border-radius: 30px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#support > div > h2 {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  top: 10px;
+  position: absolute;
+
+  z-index: 1;
+  color: #000000;
+
+  font-size: 30px;
+  line-height: 38px;
+  margin-left: 20px;
+}
+#support > div > p {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  top: 60px;
+  position: absolute;
+
+  z-index: 1;
+  color: #0d0d0d;
+
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+
+#downlaod {
+  margin: auto;
+  margin-top: 100px;
+  width: 85%;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 50, 74),
+    rgb(24, 50, 51),
+    rgb(92, 39, 64)
+  );
+}
+#downlaod > div {
+  padding: 10px;
+  margin-left: 30px;
+}
+#downlaod > div > h1 {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  width: 40%;
+}
+#downlaod > div > h3 {
+  margin-top: 50px;
+  width: 40%;
+  margin-bottom: 80px;
+  font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+#downlaod > div > a {
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+
+#downlaod > div > a > img:hover {
+  transform: scale(1.05);
+}
+#downlaod > div > a > img {
+  margin-bottom: 25px;
+}
+
+.joinfamily > p {
+  text-align: center;
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  line-height: 80px;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+#familycart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+  margin: auto;
+  gap: 25px;
+}
+
+#familycart > div:nth-child(1) {
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 50, 74),
+    rgb(51, 53, 65),
+    rgb(56, 87, 93)
+  );
+  padding: 0px 30px 0px 30px;
+  border-radius: 30px;
+}
+
+#familycart > div > a {
+  margin: auto;
+  display: block;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3577d8;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#familycart > div:nth-child(1) p {
+  text-align: center;
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bolder;
+  border-radius: 30px;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+#familycart > div:nth-child(2) {
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 50, 74),
+    rgb(51, 53, 65),
+    rgb(56, 87, 93)
+  );
+  text-align: center;
+  border-radius: 30px;
+  padding: 0px 30px 0px 30px;
+}
+
+#familycart > div:nth-child(2) h2 {
+  text-align: center;
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bolder;
+  border-radius: 30px;
+  padding: 5px;
+  margin-top: 0px;
+  background-image: linear-gradient(115deg, #f8ba00 12%, #ef5fa7 80%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#familycart > div:nth-child(2) > img {
+  width: 60%;
+  margin-top: 30px;
+  opacity: 0.3;
+}
+
+#familycart > div:nth-child(2) p {
+  text-align: center;
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 30px;
+
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+#familycart > div > img {
+  width: 80%;
+
+  margin: auto;
+  display: block;
+}
+#familycart > div:hover {
+  transition: all 0.6s;
+}
+
+#familycart > div:hover {
+  transform: scale(1.01);
+}
+
+#cult {
+  margin: auto;
+  margin-top: 100px;
+}
+#cult > img {
+  width: 100%;
+}
+
+#footer-top {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0px 20px 0px 20px;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+#footer-top > div {
+ 
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#footer-top > div:nth-child(2),
+#footer-top > div:nth-child(3),
+#footer-top > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  padding: 30px;
+}
+#footer-top > div:nth-child(5){
+  text-align: right;
+}
+
+#footer-top > div:nth-child(2)>a,
+#footer-top > div:nth-child(3)>a,
+#footer-top > div:nth-child(4)>a {
+
+  text-decoration: none;
+  font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: left;
+  margin-left: 30px;
+ 
+}
+
+
+#footer-top > div:nth-child(1) > p {
+  margin-top: 50px;
+
+  width: 70%;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 30px;
+  font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+#footer-top > div:nth-child(5) > a > img {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+
+
+#footer-top > div:nth-child(5) > div > a > img {
+  width: 10%;
+
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#footer-bottom {
+  background-color: rgb(17, 18, 19);
+}
+#footer-bottom > div {
+  padding: 10px;
+}
+
+#footer-bottom > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-around;
+  gap: 20px;
+}
+#footer-bottom > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#footer-bottom > div:nth-child(2) > div > a {
+  color: rgb(109, 110, 110);
+  text-decoration: none;
+  font-family: BrandonTextWeb-Regular;
+  font-size: 14px;
+  line-height: 20px;
 }
