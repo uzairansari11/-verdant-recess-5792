@@ -1,0 +1,122 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+    text-align: center;
+}
+
+body > div {
+  background-image: linear-gradient(to right, rgb(25, 28, 40), rgb(19, 12, 15));
+}
+
+#main {
+  /* border: 3px solid red; */
+  width: 25%;
+  border-radius: 15px;
+  margin: auto;
+margin-top: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 0px 10px 0px;
+}
+
+#main > h1 {
+  text-align: center;
+}
+
+form {
+  width: 70%;
+  margin: auto;
+  /* border: 2px solid red; */
+  margin: auto;
+text-align: left;
+
+}
+
+form input {
+  width: 90%;
+  padding: 5px;
+  border: none;
+  /* border: 3px solid rgb(178, 189, 178); */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+button {
+    /* border: 5px solid white; */
+  background: #ffffff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ff4742;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 900;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button:hover,
+button:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #000000;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+nav {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: auto;
+  font-weight: bolder;
+  /* position: fixed; */
+  justify-content: space-around;
+
+  background-color: #161921;
+}
+nav > div {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#mid {
+  justify-content: space-around;
+  display: flex;
+  width: 30%;
+}
+#last {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+#logo {
+  width: 20%;
+}
+#logo >a> img {
+  width: 20%;
+  justify-content: center;
+  margin-left: 10px;
+}
+nav > div > a {
+  color: #b6b7b9;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: white;
+}

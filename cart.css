@@ -1,0 +1,55 @@
+body {
+  font-family: BrandonTextWeb-Regular;
+
+  background-color: white;
+}
+
+#container {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: auto;
+  font-weight: bolder;
+  /* position: fixed; */
+  justify-content: space-around;
+
+  background-color: #161921;
+}
+nav > div {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#mid {
+  justify-content: space-around;
+  display: flex;
+  width: 30%;
+}
+#last {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+#logo {
+  width: 20%;
+}
+#logo >a> img {
+  width: 20%;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+nav > div > a {
+  color: #b6b7b9;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: white;
+}
