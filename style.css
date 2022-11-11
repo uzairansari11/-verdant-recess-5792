@@ -48,6 +48,11 @@ nav > div {
   display: flex;
   width: 30%;
 }
+
+a.active {
+  z-index: 2;
+ border-bottom: 2px solid white;
+}
 #last {
   display: flex;
   justify-content: space-around;
@@ -56,7 +61,7 @@ nav > div {
 #logo {
   width: 20%;
 }
-#logo > img {
+#logo >a> img {
   width: 20%;
   justify-content: center;
   margin-left: 10px;
@@ -71,6 +76,7 @@ nav > div > a {
 
 a:hover {
   color: white;
+  border-bottom: 1px solid white;
 }
 
 #content {
