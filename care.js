@@ -17,11 +17,27 @@ function dataDisplay(data) {
 
     let OfferPrice = document.createElement("h4");
 
-    OfferPrice.innerText = "Offer Price- ₹  " + ele.OfferPrice;
-    let buy = document.createElement("button");
-    buy.innerText = "Add";
-    cart.append(image, price, OfferPrice, buy);
+    OfferPrice.innerText = "Offer Price- ₹" + ele.OfferPrice;
+    let addCart = document.createElement("button");
+    addCart.innerText = "Add";
+let count=0
+    addCart.addEventListener("click", function () {
+      count++;
+      if (count <= 1) {
+        cartDataAdd("cart", ele);
+        alert("Product  Added  Successfully");
+      } else {
+        alert("Product Already Added");
+      }
+    });
+
+    cart.append(image, price, OfferPrice, addCart);
     document.querySelector("#labtest").append(cart);
   });
 }
 
+function cartDataAdd(key, value) {
+  let arr = JSON.parse(localStorage.getItem(key)) || [];
+  arr.push(value);
+  localStorage.setItem(key, JSON.stringify(arr));
+}

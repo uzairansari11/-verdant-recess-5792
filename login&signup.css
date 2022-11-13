@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+   background-image: linear-gradient(to right, rgb(25, 28, 40), rgb(19, 12, 15));
   color: white;
   font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
@@ -82,7 +82,7 @@ nav {
   width: 100%;
   margin: auto;
   font-weight: bolder;
-  /* position: fixed; */
+
   justify-content: space-around;
 
   background-color: #161921;

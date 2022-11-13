@@ -10,22 +10,21 @@ body {
   width: 100%;
 }
 
-
 nav {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin: auto;
   font-weight: bolder;
-  /* position: fixed; */
+
   justify-content: space-around;
 
-  background-color:#161921;
+  background-color: #161921;
 }
 nav > div {
   /* border: 2px solid red; */
   margin-top: 20px;
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #mid {
   justify-content: space-around;
@@ -40,7 +39,7 @@ nav > div {
 #logo {
   width: 20%;
 }
-#logo >a> img {
+#logo > a > img {
   width: 20%;
   justify-content: center;
   margin-left: 10px;
@@ -55,4 +54,162 @@ nav > div > a {
 
 a:hover {
   color: white;
+}
+
+
+
+#join-comunity{
+  width: 100%;
+ 
+  border: 1px solid red;
+
+}
+
+
+#join-comunity>a>img{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+#app {
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+#app > img {
+  width: 100%;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+#app > h2 {
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+
+  position: absolute;
+  top: 30px;
+  width: 30%;
+  line-height: 38px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+#app > p {
+  font-family: Inter-bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+
+  position: absolute;
+  top: 160px;
+  width: 34%;
+  line-height: 22px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 50px;
+}
+
+#app-download {
+  height: 60px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 320px;
+  margin-left: 50px;
+}
+
+#app-download > a img {
+  height: 100%;
+}
+
+#footer-top {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0px 20px 0px 20px;
+  gap: 10px;
+  justify-content: space-around;
+  color: white;
+}
+
+#footer-top > div {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#footer-top > div:nth-child(2),
+#footer-top > div:nth-child(3),
+#footer-top > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  padding: 30px;
+}
+#footer-top > div:nth-child(5) {
+  text-align: right;
+}
+
+#footer-top > div:nth-child(2) > a,
+#footer-top > div:nth-child(3) > a,
+#footer-top > div:nth-child(4) > a {
+  text-decoration: none;
+  font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#footer-top > div:nth-child(1) > p {
+  margin-top: 50px;
+
+  width: 70%;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 30px;
+  font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+#footer-top > div:nth-child(5) > a > img {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+#footer-top > div:nth-child(5) > div > a > img {
+  width: 10%;
+
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#footer-bottom {
+  background-color: rgb(17, 18, 19);
+  color: white;
+}
+#footer-bottom > div {
+  padding: 10px;
+}
+
+#footer-bottom > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-around;
+  gap: 20px;
+}
+#footer-bottom > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#footer-bottom > div:nth-child(2) > div > a {
+  color: rgb(109, 110, 110);
+  text-decoration: none;
+  font-family: BrandonTextWeb-Regular;
+  font-size: 14px;
+  line-height: 20px;
 }
