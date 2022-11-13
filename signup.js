@@ -7,15 +7,13 @@ form.addEventListener("submit", function (event) {
     mobile: form.mobile.value,
     pass: form.pass.value,
   };
-    data.push(obj);
-    
-    if (obj.email == "" || obj.mobile == "" || obj.pass == "") {
-    alert("Kindly fill all the details!")
-    } else {
-   localStorage.setItem("masai", JSON.stringify(data));
-        alert("You are a cult now❤️");      
-        
-}
-    
- 
+  data.push(obj);
+
+  if (obj.email == "" || obj.mobile == "" || obj.pass == "") {
+    alert("Kindly fill all the details!");
+  } else {
+    localStorage.setItem("masai", JSON.stringify(data));
+    alert("You are a CULT now");
+    window.location.href="login.html"
+  }
 });

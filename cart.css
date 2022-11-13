@@ -1,8 +1,12 @@
-body {
+
+ body {
   font-family: BrandonTextWeb-Regular;
 
-  background-color: white;
+  background-image: linear-gradient(to right, rgb(98, 121, 215), rgb(238, 225, 230));
+
+  color: white;
 }
+
 
 #container {
   width: 100%;
@@ -14,7 +18,7 @@ nav {
   width: 100%;
   margin: auto;
   font-weight: bolder;
-  /* position: fixed; */
+ 
   justify-content: space-around;
 
   background-color: #161921;
@@ -52,4 +56,98 @@ nav > div > a {
 
 a:hover {
   color: white;
+}
+#total{
+text-align: center;
+  font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bolder;
+  border-radius: 30px;
+  padding: 5px;
+  margin-top: 0px;
+  background-image: linear-gradient(115deg, #f8ba00 12%, #ef5fa7 80%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+
+#All-item>div>p{
+  /* text-decoration: line-through; */
+ color: #6e6e6e;
+ font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+}
+#All-item>div>h4{
+ 
+ font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+}
+
+
+#All-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  font-family: BrandonTextWeb-Regular;
+}
+#All-item > div {
+  /* border: 2px solid rgb(228, 54, 54); */
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+display: block;
+  font-family: BrandonTextWeb-Regular;
+
+}
+#allButton{
+  display: flex;
+}
+#All-item > div>img {
+ 
+  object-fit: cover;
+ width: 100%;
+  border-radius: 5px;
+}
+
+
+#All-item > div:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  padding: 0px 20px;
+  
+}
+button {
+  background: #ffffff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ff4742;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+button:hover,
+button:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #000000;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+span{
+  margin-top: 40px;
+  color: #000000;
+  font-weight: bolder;
 }
