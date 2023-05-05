@@ -14,6 +14,6 @@ form.addEventListener("submit", function (event) {
   } else {
     localStorage.setItem("masai", JSON.stringify(data));
     alert("You are a CULT now");
-    window.location.href="login.html"
+    window.location.href = "/login/login.html"
   }
 });

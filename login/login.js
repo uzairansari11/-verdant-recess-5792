@@ -9,7 +9,7 @@ function myFun(event) {
   function login(data) {
 
 
-    
+
     for (let i = 0; i <= data.length - 1; i++) {
       if (data[i].email === x && data[i].pass === y) {
         flag = true;
@@ -18,7 +18,7 @@ function myFun(event) {
     }
     if (flag == true) {
       alert("Welcome to Cult Body 💪");
-      window.location.href = "index.html";
+      window.location.href = "/index.html";
     } else {
       alert("Sorry😔😔Wrong Credentials");
     }

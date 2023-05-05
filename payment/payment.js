@@ -16,6 +16,6 @@ payment.addEventListener("submit", function (event) {
     localStorage.setItem("pay", JSON.stringify(Bag));
     alert("Payment Successful");
 
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   }
 });
