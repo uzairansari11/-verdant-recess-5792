@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: BrandonTextWeb-Regular;
 
@@ -10,39 +15,24 @@ body {
   width: 100%;
 }
 
-#banner > {
-  height: 100vh;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-#banner > video {
-  position: relative;
-  top: 0;
-  left: 0;
-  object-fit: fill;
-  width: 100%;
-
-  z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}
 
 nav {
+  /* border: 2px solid red; */
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  width: 98%;
+  width: 100%;
   margin: auto;
   font-weight: bolder;
   position: fixed;
   justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  z-index: 9999;
+  margin-bottom: 50px;
 }
-nav > div {
-  /* border: 2px solid red; */
-  margin-top: 20px;
-}
+
+
 #mid {
   justify-content: space-around;
   display: flex;
@@ -51,23 +41,28 @@ nav > div {
 
 a.active {
   z-index: 2;
- border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
+
 #last {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
+
 #logo {
+  display: block;
+  justify-content: space-around;
   width: 20%;
 }
-#logo >a> img {
-  width: 20%;
+
+#logo>a>img {
+  width: 50%;
   justify-content: center;
   margin-left: 10px;
 }
 
-nav > div > a {
+nav>div>a {
   color: #b6b7b9;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -79,20 +74,31 @@ a:hover {
   border-bottom: 1px solid white;
 }
 
+
+#banner>video {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: fill;
+  width: 100%;
+  margin-top: 50px;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
 #content {
   /* border: 5px solid blue; */
-
   width: 100%;
   text-align: center;
-
   z-index: 1;
   margin-top: -700px;
 }
 
-#content > img {
+#content>img {
   width: 35%;
 }
-#content > h2 {
+
+#content>h2 {
   color: #ffffff;
   /* border: 2px solid blue; */
   width: 35%;
@@ -101,39 +107,44 @@ a:hover {
   font-family: sans-serif;
   letter-spacing: 3px;
 }
+
 .pass {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 30px;
   width: 80%;
   padding: 20px;
   margin: auto;
   margin-top: 45vh;
 }
-.pass > div {
+
+.pass>div {
   border: 2px solid #c9c9ce;
   text-align: center;
   color: #adaeb2;
   border-radius: 20px;
 }
-.pass > div:hover {
+
+.pass>div:hover {
   background-color: #232631;
 }
-.pass > div > p {
+
+.pass>div>p {
   width: 66%;
   word-spacing: 0px;
   margin: auto;
   margin-bottom: 20px;
 }
-.pass > div:nth-child(1) > h1 {
+
+.pass>div:nth-child(1)>h1 {
   color: #eec879;
 }
-.pass > div:nth-child(2) > h1 {
+
+.pass>div:nth-child(2)>h1 {
   color: #c9c9ce;
 }
 
-.pass > div:nth-child(3) > h1 {
+.pass>div:nth-child(3)>h1 {
   color: #724362;
 }
 
@@ -162,7 +173,7 @@ a:hover {
   opacity: 0.5;
 }
 
-#fitness-member > p {
+#fitness-member>p {
   font-size: 80px;
   font-weight: bold;
   color: white;
@@ -180,16 +191,18 @@ a:hover {
   width: 80%;
   margin: auto;
 }
-#top-fitness-member > div > img {
+
+#top-fitness-member>div>img {
   width: 100%;
 }
 
-#top-fitness-member > div {
+#top-fitness-member>div {
   display: flex;
   margin: auto;
   justify-content: center;
 }
-#top-fitness-member > div:nth-child(2) {
+
+#top-fitness-member>div:nth-child(2) {
   margin-top: 50px;
 }
 
@@ -200,14 +213,17 @@ a:hover {
   padding: 20px;
   margin-top: 50px;
 }
-#bottom-fitness-member > div > img {
+
+#bottom-fitness-member>div>img {
   width: 100%;
 }
-#bottom-fitness-member > div {
+
+#bottom-fitness-member>div {
   display: flex;
   margin: auto;
   justify-content: center;
 }
+
 #groupclass {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -217,7 +233,7 @@ a:hover {
   padding: 10px;
 }
 
-#groupclass > div > img {
+#groupclass>div>img {
   width: 100%;
   padding: 3px;
   border-radius: 15px;
@@ -235,6 +251,7 @@ a:hover {
   margin: auto;
   margin-bottom: 20px;
 }
+
 #cult-pass {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -243,13 +260,13 @@ a:hover {
   gap: 50px;
 }
 
-#cult-pass > div > img {
+#cult-pass>div>img {
   width: 100%;
   border-radius: 20px;
   z-index: -1;
 }
 
-#culttop > p {
+#culttop>p {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
 
@@ -263,7 +280,8 @@ a:hover {
   margin-bottom: 100px;
   letter-spacing: 2px;
 }
-#culttop > a {
+
+#culttop>a {
   margin: auto;
   display: block;
   width: 10%;
@@ -271,7 +289,8 @@ a:hover {
   margin-bottom: 50px;
   color: #3887fd;
 }
-#cult-pass > div > h2 {
+
+#cult-pass>div>h2 {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   margin: -120px;
@@ -280,7 +299,8 @@ a:hover {
   z-index: 1;
   width: 50%;
 }
-#cult-pass > div > h1 {
+
+#cult-pass>div>h1 {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   z-index: 1;
@@ -288,29 +308,33 @@ a:hover {
   margin-top: 40px;
   font-size: 60px;
 }
-#cult-pass > div:nth-child(1) > h1 {
+
+#cult-pass>div:nth-child(1)>h1 {
   color: #ffcf61;
 }
-#cult-pass > div:nth-child(2) > h1 {
+
+#cult-pass>div:nth-child(2)>h1 {
   color: #c9c9ce;
 }
 
-#cult-pass > div:nth-child(3) > h1 {
+#cult-pass>div:nth-child(3)>h1 {
   color: #e16b9f;
 }
-#cult-pass > div > h3 {
+
+#cult-pass>div>h3 {
   font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   margin-bottom: 0px;
 }
 
-#cult-pass > div > ul {
+#cult-pass>div>ul {
   font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   padding: 4%;
   margin-bottom: 0px;
 }
-#cult-pass > div > ul > li {
+
+#cult-pass>div>ul>li {
   font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   padding: 0px;
@@ -318,7 +342,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-#cult-pass > div > button {
+#cult-pass>div>button {
   background: #ffffff;
   font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
@@ -335,16 +359,17 @@ a:hover {
   margin-bottom: 150px;
 }
 
-#cult-pass > div > button:hover,
-#cult-pass > div > button:active {
+#cult-pass>div>button:hover,
+#cult-pass>div>button:active {
   background-color: white;
   background-position: 0 0;
   color: #000000;
 }
 
-#cult-pass > div > button:active {
+#cult-pass>div>button:active {
   opacity: 0.5;
 }
+
 .try {
   background-color: #2f313c;
 }
@@ -359,23 +384,23 @@ a:hover {
   position: relative;
 }
 
-#support > div {
+#support>div {
   position: relative;
   transition: all 0.3s;
 }
 
-#support > div:hover {
+#support>div:hover {
   transform: scale(1.01);
 }
 
-#support > div > img {
+#support>div>img {
   width: 100%;
   border-radius: 30px;
   z-index: -1;
   opacity: 0.9;
 }
 
-#support > div > h2 {
+#support>div>h2 {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   top: 10px;
@@ -388,7 +413,8 @@ a:hover {
   line-height: 38px;
   margin-left: 20px;
 }
-#support > div > p {
+
+#support>div>p {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   top: 60px;
@@ -408,23 +434,24 @@ a:hover {
   margin-top: 100px;
   width: 85%;
   border-radius: 30px;
-  background-image: linear-gradient(
-    to right,
-    rgb(44, 50, 74),
-    rgb(24, 50, 51),
-    rgb(92, 39, 64)
-  );
+  background-image: linear-gradient(to right,
+      rgb(44, 50, 74),
+      rgb(24, 50, 51),
+      rgb(92, 39, 64));
 }
-#downlaod > div {
+
+#downlaod>div {
   padding: 10px;
   margin-left: 30px;
 }
-#downlaod > div > h1 {
+
+#downlaod>div>h1 {
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
   width: 40%;
 }
-#downlaod > div > h3 {
+
+#downlaod>div>h3 {
   margin-top: 50px;
   width: 40%;
   margin-bottom: 80px;
@@ -432,19 +459,20 @@ a:hover {
     sans-serif;
 }
 
-#downlaod > div > a {
+#downlaod>div>a {
   margin-right: 20px;
   transition: all 0.5s;
 }
 
-#downlaod > div > a > img:hover {
+#downlaod>div>a>img:hover {
   transform: scale(1.05);
 }
-#downlaod > div > a > img {
+
+#downlaod>div>a>img {
   margin-bottom: 25px;
 }
 
-.joinfamily > p {
+.joinfamily>p {
   text-align: center;
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
@@ -461,18 +489,16 @@ a:hover {
   gap: 25px;
 }
 
-#familycart > div:nth-child(1) {
-  background-image: linear-gradient(
-    to right,
-    rgb(44, 50, 74),
-    rgb(51, 53, 65),
-    rgb(56, 87, 93)
-  );
+#familycart>div:nth-child(1) {
+  background-image: linear-gradient(to right,
+      rgb(44, 50, 74),
+      rgb(51, 53, 65),
+      rgb(56, 87, 93));
   padding: 0px 30px 0px 30px;
   border-radius: 30px;
 }
 
-#familycart > div > a {
+#familycart>div>a {
   margin: auto;
   display: block;
   width: 30%;
@@ -484,7 +510,7 @@ a:hover {
   margin-top: 20px;
 }
 
-#familycart > div:nth-child(1) p {
+#familycart>div:nth-child(1) p {
   text-align: center;
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
@@ -496,19 +522,17 @@ a:hover {
   margin-top: 0px;
 }
 
-#familycart > div:nth-child(2) {
-  background-image: linear-gradient(
-    to right,
-    rgb(44, 50, 74),
-    rgb(51, 53, 65),
-    rgb(56, 87, 93)
-  );
+#familycart>div:nth-child(2) {
+  background-image: linear-gradient(to right,
+      rgb(44, 50, 74),
+      rgb(51, 53, 65),
+      rgb(56, 87, 93));
   text-align: center;
   border-radius: 30px;
   padding: 0px 30px 0px 30px;
 }
 
-#familycart > div:nth-child(2) h2 {
+#familycart>div:nth-child(2) h2 {
   text-align: center;
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
@@ -523,13 +547,13 @@ a:hover {
   -webkit-background-clip: text;
 }
 
-#familycart > div:nth-child(2) > img {
+#familycart>div:nth-child(2)>img {
   width: 60%;
   margin-top: 30px;
   opacity: 0.3;
 }
 
-#familycart > div:nth-child(2) p {
+#familycart>div:nth-child(2) p {
   text-align: center;
   font-family: Inter-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
     sans-serif;
@@ -543,17 +567,18 @@ a:hover {
   width: 90%;
 }
 
-#familycart > div > img {
+#familycart>div>img {
   width: 80%;
 
   margin: auto;
   display: block;
 }
-#familycart > div:hover {
+
+#familycart>div:hover {
   transition: all 0.6s;
 }
 
-#familycart > div:hover {
+#familycart>div:hover {
   transform: scale(1.01);
 }
 
@@ -561,7 +586,8 @@ a:hover {
   margin: auto;
   margin-top: 100px;
 }
-#cult > img {
+
+#cult>img {
   width: 100%;
 }
 
@@ -574,27 +600,28 @@ a:hover {
   justify-content: space-around;
 }
 
-#footer-top > div {
- 
+#footer-top>div {
+
   margin-bottom: 100px;
   margin-top: 100px;
 }
 
-#footer-top > div:nth-child(2),
-#footer-top > div:nth-child(3),
-#footer-top > div:nth-child(4) {
+#footer-top>div:nth-child(2),
+#footer-top>div:nth-child(3),
+#footer-top>div:nth-child(4) {
   display: flex;
   flex-direction: column;
   color: red;
   padding: 30px;
 }
-#footer-top > div:nth-child(5){
+
+#footer-top>div:nth-child(5) {
   text-align: right;
 }
 
-#footer-top > div:nth-child(2)>a,
-#footer-top > div:nth-child(3)>a,
-#footer-top > div:nth-child(4)>a {
+#footer-top>div:nth-child(2)>a,
+#footer-top>div:nth-child(3)>a,
+#footer-top>div:nth-child(4)>a {
 
   text-decoration: none;
   font-family: Inter-Regular, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -604,11 +631,11 @@ a:hover {
   color: white;
   text-align: left;
   margin-left: 30px;
- 
+
 }
 
 
-#footer-top > div:nth-child(1) > p {
+#footer-top>div:nth-child(1)>p {
   margin-top: 50px;
 
   width: 70%;
@@ -619,14 +646,14 @@ a:hover {
     sans-serif;
 }
 
-#footer-top > div:nth-child(5) > a > img {
+#footer-top>div:nth-child(5)>a>img {
   width: 70%;
   margin-bottom: 30px;
 }
 
 
 
-#footer-top > div:nth-child(5) > div > a > img {
+#footer-top>div:nth-child(5)>div>a>img {
   width: 10%;
 
   margin-top: 50px;
@@ -636,22 +663,25 @@ a:hover {
 #footer-bottom {
   background-color: rgb(17, 18, 19);
 }
-#footer-bottom > div {
+
+#footer-bottom>div {
   padding: 10px;
 }
 
-#footer-bottom > div:nth-child(2) {
+#footer-bottom>div:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-content: space-around;
   gap: 20px;
 }
-#footer-bottom > div:nth-child(2) > div {
+
+#footer-bottom>div:nth-child(2)>div {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-#footer-bottom > div:nth-child(2) > div > a {
+
+#footer-bottom>div:nth-child(2)>div>a {
   color: rgb(109, 110, 110);
   text-decoration: none;
   font-family: BrandonTextWeb-Regular;
