@@ -14,7 +14,7 @@ function dataDisplay(data) {
 
 		let OfferPrice = document.createElement("h4");
 
-		OfferPrice.innerText = "Price- ₹" + ele.OfferPrice;
+		OfferPrice.innerText = "Price - ₹" + ele.OfferPrice;
 		let buttons = document.createElement("div");
 		buttons.setAttribute("id", "allButton");
 
@@ -25,7 +25,7 @@ function dataDisplay(data) {
 				qty.innerText--;
 				z = z - ele.OfferPrice;
 
-				document.getElementById("total").innerText = "Total Price:₹" + z;
+				document.getElementById("total").innerText = "Total Price: ₹" + z;
 			}
 			if (qty.innerText < 1) {
 				removeItem(allCart, index);
@@ -41,7 +41,7 @@ function dataDisplay(data) {
 			qty.innerText++;
 			z = z + ele.OfferPrice;
 
-			document.getElementById("total").innerText = "Total Price:₹" + z;
+			document.getElementById("total").innerText = "Total Price: ₹" + z;
 		});
 
 		let buy = document.createElement("button");
@@ -68,7 +68,7 @@ dataDisplay(allCart);
 let z;
 function price(data) {
 	z = data.reduce((acc, ele) => acc + ele.OfferPrice, 0);
-	document.getElementById("total").innerText = "Total Price:₹" + z;
+	document.getElementById("total").innerText = "Total Price : ₹" + "  " + z;
 	dataDisplay(data);
 }
 
