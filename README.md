@@ -1,5 +1,5 @@
 # Cult Body
-CultBody is a clone of Cultfit . It provides product related to your fintness and also provide diffrent kind of fitness trianing via online and offline as per customer requiremen
+CultBody is a clone of Cultfit . It provides product related to your fintness and also provide diffrent kind of fitness trianing via online and offline as per customer requirement.
 
 
 ## Tech Stack
