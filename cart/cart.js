@@ -50,8 +50,6 @@ function dataDisplay(data) {
 		buy.addEventListener("click", function () {
 			window.location.href = "/payment/payment.html";
 			window.location.reload = "/payment/payment.html";
-
-			removeItem(allCart, index);
 		});
 
 		let remove = document.createElement("button");

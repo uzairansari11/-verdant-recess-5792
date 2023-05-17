@@ -69,11 +69,7 @@ a:hover {
   color: white;
   border-bottom: 1px solid white;
 }
-/* #banner {
-  width: 80%;
-  margin: auto;
-  margin-top: 50px;
-} */
+
 
 #banner>img {
   width: 100%;
@@ -110,9 +106,9 @@ a:hover {
 }
 
 #therapy>div:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: all 0.5s;
-  padding: 0px 20px;
+
 }
 
 #therapy>div>img {
