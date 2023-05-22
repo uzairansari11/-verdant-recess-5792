@@ -1,18 +1,19 @@
 body {
-  font-family: BrandonTextWeb-Regular;
-  background-image: linear-gradient(to right, rgb(25, 28, 40), rgb(19, 12, 15));
-  color: white;
-  margin: 0px;
+  font-family: "BrandonTextWeb-Regular", sans-serif;
+  background-color: #f7f7f7;
+  color: #333333;
+  margin: 0;
 }
 
-#conatainer {
-  border: 1px solid rgb(240, 239, 239);
-  width: 25%;
+#container {
+  border: 1px solid #d3d3d3;
+  width: 90%;
+  max-width: 400px;
   border-radius: 15px;
   margin: auto;
-  background-color: #003b95;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  margin-top: 20px
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 #image>img {
@@ -21,44 +22,39 @@ body {
   display: block;
   margin-top: 10px;
   border-radius: 15px;
-
 }
-
-
 
 h1 {
   text-align: center;
-  border: 0px solid green;
 }
 
 form {
-  width: 250px;
+  width: 60%;
   margin: auto;
 }
 
 form label {
   display: flex;
   margin-top: 10px;
-
+  color: #333333;
 }
 
 form input {
-  width: 90%;
+  width: 100%;
   padding: 10px;
-  border: 3px solid rgb(11, 12, 11);
+  border: none;
   border-radius: 10px;
+  background-color: #f1f1f1;
+  color: #333333;
 }
 
-
-
 button {
-  /* border: 5px solid white; */
-  background: #ffffff;
+  background-color: #ff4742;
   border: none;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  color: #ff4742;
+  color: #ffffff;
   cursor: pointer;
   padding: 10px 12px;
   text-align: center;
@@ -68,15 +64,45 @@ button {
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 100%;
+  max-width: 200px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover,
 button:active {
-  background-color: white;
-  background-position: 0 0;
-  color: #000000;
+  background-color: #e63c36;
 }
 
 button:active {
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+  /* Adjustments for tablet devices */
+  #container {
+    width: 80%;
+  }
+
+  button {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Adjustments for mobile devices */
+  #container {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  form input {
+    padding: 8px;
+  }
+
+  button {
+    max-width: 120px;
+  }
 }

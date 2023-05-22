@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>payment</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Payment</title>
+	<link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+	<div id="container">
+		<h1>Enter Your Card Details</h1>
+		<form>
+			<label for="cardNumber">Card Number</label>
+			<input type="text" id="cardNumber" placeholder="Enter Card Number" required minlength="16" maxlength="16" />
 
-		<link rel="stylesheet" href="payment.css" />
-	</head>
-	<body>
-		<div id="conatainer">
-			<h1>Enter Your Card Details</h1>
-			<form>
-				<label>Card Number</label>
-				<input type="password" placeholder=" Enter Card Number" id="Email" />
-				<label>Name on Card</label>
-				<input type="text" placeholder="Enter Card Holder Name" id="mobile" />
-				<label>OTP Authorization</label>
-				<input type="number" placeholder="Enter OTP" id="pass" />
-				<label> Expiry Date </label>
-				<input type="date" />
-				<label>CVV</label>
-				<input type="password" />
-				<div id="image">
-					<img
-						src=" https://support.direct.ingenico.com/contentAsset/image/e26cb25b-7c66-4950-9ee1-86376f2e8cdb/fileAsset"
-						alt=""
-					/>
-				</div>
-				<button>Pay Now</button>
-			</form>
-		</div>
-	</body>
-</html>
+			<label for="cardHolderName">Name on Card</label>
+			<input type="text" id="cardHolderName" placeholder="Enter Card Holder Name" required />
+
+			<label for="otp">OTP Authorization</label>
+			<input type="number" id="otp" placeholder="Enter OTP" required minlength="4" maxlength="6" />
+
+			<label for="expiryDate">Expiry Date</label>
+			<input type="text" id="expiryDate" placeholder="MM/YY" required pattern="\d{2}/\d{2}" />
+
+			<label for="cvv">CVV</label>
+			<input type="password" id="cvv" placeholder="Enter CVV" required minlength="3" maxlength="4" />
+
+			<div id="image">
+				<img src="https://support.direct.ingenico.com/contentAsset/image/e26cb25b-7c66-4950-9ee1-86376f2e8cdb/fileAsset" alt="" />
+			</div>
+			<button type="submit">Pay Now</button>
+		</form>
+	</div>
+</body>
 <script src="/payment/payment.js"></script>
+</html>
